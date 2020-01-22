@@ -10,28 +10,20 @@ import UIKit
 
 class DetalheAtividadeViewController: UIViewController {
 
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-
-        
     @IBOutlet weak var nomeAtividade: UILabel!
+    @IBOutlet weak var tags: UILabel!
+    @IBOutlet weak var dataInicio: UILabel!
+    @IBOutlet weak var dataPrevista: UILabel!
+    @IBOutlet weak var descricao: UILabel!
     
+ 
     
     var detailText: String!
         
     override func viewDidLoad() {
             super.viewDidLoad()
             
-            self.nomeAtividade.text = detailText
+//            self.nomeAtividade.text = detailText
     }
         
 }
