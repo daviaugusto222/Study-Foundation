@@ -16,6 +16,7 @@
 		4BA883AC23D886D500E83537 /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883AB23D886D500E83537 /* Jornada.storyboard */; };
 		4BA883AE23D8874900E83537 /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883AD23D8874900E83537 /* Perfil.storyboard */; };
 		74ABD78423D8CADA006D9034 /* DetalheAtividadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ABD78323D8CADA006D9034 /* DetalheAtividadeViewController.swift */; };
+		74ABD78623D8D3C0006D9034 /* DetalheAtividade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74ABD78523D8D3C0006D9034 /* DetalheAtividade.storyboard */; };
 		74D8635E23D88BD800D5A008 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D8635D23D88BD800D5A008 /* Home.storyboard */; };
 		9A7357D523D8CA4300213816 /* JornadaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7357D423D8CA4300213816 /* JornadaTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		4BA883AB23D886D500E83537 /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
 		4BA883AD23D8874900E83537 /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
 		74ABD78323D8CADA006D9034 /* DetalheAtividadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheAtividadeViewController.swift; sourceTree = "<group>"; };
+		74ABD78523D8D3C0006D9034 /* DetalheAtividade.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetalheAtividade.storyboard; sourceTree = "<group>"; };
 		74D8635D23D88BD800D5A008 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		9A7357D423D8CA4300213816 /* JornadaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JornadaTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 				9A7357D423D8CA4300213816 /* JornadaTableViewController.swift */,
 				4BA883AD23D8874900E83537 /* Perfil.storyboard */,
 				4BA8839B23D8701D00E83537 /* ViewController.swift */,
+				74ABD78523D8D3C0006D9034 /* DetalheAtividade.storyboard */,
 				74D8635D23D88BD800D5A008 /* Home.storyboard */,
 				74ABD78323D8CADA006D9034 /* DetalheAtividadeViewController.swift */,
 				4BA883A023D8701F00E83537 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				4BA883AC23D886D500E83537 /* Jornada.storyboard in Resources */,
 				4BA883AE23D8874900E83537 /* Perfil.storyboard in Resources */,
 				74D8635E23D88BD800D5A008 /* Home.storyboard in Resources */,
+				74ABD78623D8D3C0006D9034 /* DetalheAtividade.storyboard in Resources */,
 				4BA883A123D8701F00E83537 /* Assets.xcassets in Resources */,
 				4BA8839F23D8701D00E83537 /* Main.storyboard in Resources */,
 			);
@@ -160,7 +164,6 @@
 				4BA8839C23D8701D00E83537 /* ViewController.swift in Sources */,
 				4BA8839823D8701D00E83537 /* AppDelegate.swift in Sources */,
 				9A7357D523D8CA4300213816 /* JornadaTableViewController.swift in Sources */,
-				74ABD78023D8BD1D006D9034 /* HomeControl.swift in Sources */,
 				4BA8839A23D8701D00E83537 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

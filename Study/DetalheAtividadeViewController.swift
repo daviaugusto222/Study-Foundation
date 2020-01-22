@@ -23,14 +23,15 @@ class DetalheAtividadeViewController: UIViewController {
     
 
         
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var nomeAtividade: UILabel!
+    
     
     var detailText: String!
         
     override func viewDidLoad() {
             super.viewDidLoad()
             
-            self.descriptionLabel.text = detailText
+            self.nomeAtividade.text = detailText
     }
         
 }

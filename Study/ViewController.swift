@@ -21,11 +21,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        self.tableView.delegate = self
-//        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destiny = segue.destination as? DetalheAtividadeViewController,
+            segue.identifier == "detalheDaAtividade",
+            let sendedNome = sender as? String{
+                destiny.detailText = "\(sendedNome) veio hoje"
+            
+            }
+        
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return atividades.count
     }
@@ -36,5 +44,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
         
     }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let nome: String = atividades[indexPath.row]
+//        self.performSegue(withIdentifier: "detalheDaAtividade", sender: nome)
+//
+//    }
+//
     
 }
