@@ -13,6 +13,8 @@
 		4BA8839F23D8701D00E83537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA8839D23D8701D00E83537 /* Main.storyboard */; };
 		4BA883A123D8701F00E83537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883A023D8701F00E83537 /* Assets.xcassets */; };
 		4BA883A423D8701F00E83537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883A223D8701F00E83537 /* LaunchScreen.storyboard */; };
+		4BA883AC23D886D500E83537 /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883AB23D886D500E83537 /* Jornada.storyboard */; };
+		4BA883AE23D8874900E83537 /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883AD23D8874900E83537 /* Perfil.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4BA883A023D8701F00E83537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BA883A323D8701F00E83537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BA883A523D8701F00E83537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA883AB23D886D500E83537 /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
+		4BA883AD23D8874900E83537 /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				4BA8839923D8701D00E83537 /* SceneDelegate.swift */,
 				4BA8839B23D8701D00E83537 /* ViewController.swift */,
 				4BA8839D23D8701D00E83537 /* Main.storyboard */,
+				4BA883AB23D886D500E83537 /* Jornada.storyboard */,
+				4BA883AD23D8874900E83537 /* Perfil.storyboard */,
 				4BA883A023D8701F00E83537 /* Assets.xcassets */,
 				4BA883A223D8701F00E83537 /* LaunchScreen.storyboard */,
 				4BA883A523D8701F00E83537 /* Info.plist */,
@@ -126,6 +132,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BA883A423D8701F00E83537 /* LaunchScreen.storyboard in Resources */,
+				4BA883AC23D886D500E83537 /* Jornada.storyboard in Resources */,
+				4BA883AE23D8874900E83537 /* Perfil.storyboard in Resources */,
 				4BA883A123D8701F00E83537 /* Assets.xcassets in Resources */,
 				4BA8839F23D8701D00E83537 /* Main.storyboard in Resources */,
 			);
