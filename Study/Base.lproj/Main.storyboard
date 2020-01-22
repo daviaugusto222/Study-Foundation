@@ -18,9 +18,9 @@
                         <color key="selectedImageTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Sdz-SF-RbD" kind="relationship" relationship="viewControllers" id="Bc4-vm-zwR"/>
-                        <segue destination="G8c-nD-XSr" kind="relationship" relationship="viewControllers" id="XPC-uT-aBf"/>
-                        <segue destination="VNT-Vs-ave" kind="relationship" relationship="viewControllers" id="ZBM-Gc-hBG"/>
+                        <segue destination="VNT-Vs-ave" kind="relationship" relationship="viewControllers" id="BqE-kd-EaO"/>
+                        <segue destination="G8c-nD-XSr" kind="relationship" relationship="viewControllers" id="3aL-XV-n1j"/>
+                        <segue destination="Sdz-SF-RbD" kind="relationship" relationship="viewControllers" id="3pL-R2-c7C"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOj-Xo-eZ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
