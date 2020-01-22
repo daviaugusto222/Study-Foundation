@@ -15,6 +15,7 @@
 		4BA883A423D8701F00E83537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883A223D8701F00E83537 /* LaunchScreen.storyboard */; };
 		4BA883AC23D886D500E83537 /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883AB23D886D500E83537 /* Jornada.storyboard */; };
 		4BA883AE23D8874900E83537 /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883AD23D8874900E83537 /* Perfil.storyboard */; };
+		74ABD78023D8BD1D006D9034 /* HomeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ABD77F23D8BD1D006D9034 /* HomeControl.swift */; };
 		74D8635E23D88BD800D5A008 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D8635D23D88BD800D5A008 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		4BA883A523D8701F00E83537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BA883AB23D886D500E83537 /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
 		4BA883AD23D8874900E83537 /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
+		74ABD77F23D8BD1D006D9034 /* HomeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControl.swift; sourceTree = "<group>"; };
 		74D8635D23D88BD800D5A008 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 				4BA8839D23D8701D00E83537 /* Main.storyboard */,
 				4BA883AB23D886D500E83537 /* Jornada.storyboard */,
 				4BA883AD23D8874900E83537 /* Perfil.storyboard */,
+				74ABD77F23D8BD1D006D9034 /* HomeControl.swift */,
 				74D8635D23D88BD800D5A008 /* Home.storyboard */,
 				4BA883A023D8701F00E83537 /* Assets.xcassets */,
 				4BA883A223D8701F00E83537 /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 			files = (
 				4BA8839C23D8701D00E83537 /* ViewController.swift in Sources */,
 				4BA8839823D8701D00E83537 /* AppDelegate.swift in Sources */,
+				74ABD78023D8BD1D006D9034 /* HomeControl.swift in Sources */,
 				4BA8839A23D8701D00E83537 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
