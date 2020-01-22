@@ -21,6 +21,7 @@ class DetalheAtividadeViewController: UIViewController {
     var detailText: String!
         
     override func viewDidLoad() {
+        
             super.viewDidLoad()
             
 //            self.nomeAtividade.text = detailText

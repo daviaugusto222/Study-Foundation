@@ -66,9 +66,9 @@
                     <connections>
                         <outlet property="dataInicio" destination="LOp-KM-MHh" id="Z0j-OG-Dvb"/>
                         <outlet property="dataPrevista" destination="QeE-5n-VZh" id="vdH-qu-8qo"/>
+                        <outlet property="descricao" destination="zBC-Br-lEA" id="O1e-r7-4zH"/>
                         <outlet property="nomeAtividade" destination="h4C-pf-tur" id="FxJ-J0-eOx"/>
                         <outlet property="tags" destination="n1b-i9-pw0" id="tPu-jb-BCL"/>
-                        <outlet property="tahs" destination="n1b-i9-pw0" id="AaX-CL-KhA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3W-QU-ZUH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
