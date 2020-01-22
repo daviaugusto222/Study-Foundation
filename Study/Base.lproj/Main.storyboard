@@ -30,7 +30,7 @@
         <!--Home-->
         <scene sceneID="f2p-gu-0Q0">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="NWg-5J-mqK" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="Home" id="NWg-5J-mqK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="dBS-Ax-gJY"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEL-ng-8zD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -40,7 +40,7 @@
         <!--Jornada-->
         <scene sceneID="QDe-T0-D0U">
             <objects>
-                <viewControllerPlaceholder storyboardName="Jornada" id="geY-PN-yjZ" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Jornada" referencedIdentifier="Jornada" id="geY-PN-yjZ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="TW2-5l-nNT"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9D4-9b-787" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -50,7 +50,7 @@
         <!--Perfil-->
         <scene sceneID="gdm-RC-64G">
             <objects>
-                <viewControllerPlaceholder storyboardName="Perfil" id="e5s-MS-rwz" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Perfil" referencedIdentifier="Perfil" id="e5s-MS-rwz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="tFJ-fc-u1X"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dnT-4t-KUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
