@@ -30,10 +30,10 @@
         <!--Home-->
         <scene sceneID="f2p-gu-0Q0">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SEL-ng-8zD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="Home" id="NWg-5J-mqK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="dBS-Ax-gJY"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SEL-ng-8zD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-150" y="581"/>
         </scene>
