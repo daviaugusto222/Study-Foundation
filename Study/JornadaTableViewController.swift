@@ -11,7 +11,7 @@ import UIKit
 class JornadaTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var Jornadas: UITableView!
     
-    let jornadasArray = ["Beber água", "Alongar", "Fazer exercícios"]
+    let jornadasArray = ["Beber água", "Alongar", "Fazer exercícios", "Aprender pomodoro", "Aplicar em alguma cadeira", "Tirar 10 na prova", "Zerar a vida"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
