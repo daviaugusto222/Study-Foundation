@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Jornada Table View Controller-->
+        <!--Jornada-->
         <scene sceneID="c7o-bt-Qc7">
             <objects>
-                <viewController id="2Ms-W1-SvD" customClass="JornadaTableViewController" customModule="Study" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Jornada" id="2Ms-W1-SvD" customClass="JornadaTableViewController" customModule="Study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZtB-41-aH7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
