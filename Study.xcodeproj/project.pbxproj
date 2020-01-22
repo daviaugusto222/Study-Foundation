@@ -15,9 +15,8 @@
 		4BA883A423D8701F00E83537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883A223D8701F00E83537 /* LaunchScreen.storyboard */; };
 		4BA883AC23D886D500E83537 /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883AB23D886D500E83537 /* Jornada.storyboard */; };
 		4BA883AE23D8874900E83537 /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883AD23D8874900E83537 /* Perfil.storyboard */; };
-		74ABD78023D8BD1D006D9034 /* HomeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ABD77F23D8BD1D006D9034 /* HomeControl.swift */; };
+		74ABD78423D8CADA006D9034 /* DetalheAtividadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ABD78323D8CADA006D9034 /* DetalheAtividadeViewController.swift */; };
 		74D8635E23D88BD800D5A008 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D8635D23D88BD800D5A008 /* Home.storyboard */; };
-		9A68DBDF23D8B827003BC5B1 /* JornadaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A68DBDE23D8B827003BC5B1 /* JornadaTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,7 @@
 		4BA883A523D8701F00E83537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BA883AB23D886D500E83537 /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
 		4BA883AD23D8874900E83537 /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
-		74ABD77F23D8BD1D006D9034 /* HomeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControl.swift; sourceTree = "<group>"; };
+		74ABD78323D8CADA006D9034 /* DetalheAtividadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheAtividadeViewController.swift; sourceTree = "<group>"; };
 		74D8635D23D88BD800D5A008 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		9A68DBDE23D8B827003BC5B1 /* JornadaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JornadaTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,14 +67,12 @@
 			children = (
 				4BA8839723D8701D00E83537 /* AppDelegate.swift */,
 				4BA8839923D8701D00E83537 /* SceneDelegate.swift */,
-				4BA8839B23D8701D00E83537 /* ViewController.swift */,
 				4BA8839D23D8701D00E83537 /* Main.storyboard */,
 				4BA883AB23D886D500E83537 /* Jornada.storyboard */,
 				4BA883AD23D8874900E83537 /* Perfil.storyboard */,
-				74ABD77F23D8BD1D006D9034 /* HomeControl.swift */,
+				4BA8839B23D8701D00E83537 /* ViewController.swift */,
 				74D8635D23D88BD800D5A008 /* Home.storyboard */,
-				4BA883AF23D8BF5B00E83537 /* AdicionarAtividade.storyboard */,
-				4BA883B123D8BF9E00E83537 /* AdicionarAtividadeViewController.swift */,
+				74ABD78323D8CADA006D9034 /* DetalheAtividadeViewController.swift */,
 				4BA883A023D8701F00E83537 /* Assets.xcassets */,
 				4BA883A223D8701F00E83537 /* LaunchScreen.storyboard */,
 				4BA883A523D8701F00E83537 /* Info.plist */,
@@ -144,7 +141,6 @@
 			files = (
 				4BA883A423D8701F00E83537 /* LaunchScreen.storyboard in Resources */,
 				4BA883AC23D886D500E83537 /* Jornada.storyboard in Resources */,
-				4BA883B023D8BF5B00E83537 /* AdicionarAtividade.storyboard in Resources */,
 				4BA883AE23D8874900E83537 /* Perfil.storyboard in Resources */,
 				74D8635E23D88BD800D5A008 /* Home.storyboard in Resources */,
 				4BA883A123D8701F00E83537 /* Assets.xcassets in Resources */,
@@ -159,11 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74ABD78423D8CADA006D9034 /* DetalheAtividadeViewController.swift in Sources */,
 				4BA8839C23D8701D00E83537 /* ViewController.swift in Sources */,
 				4BA8839823D8701D00E83537 /* AppDelegate.swift in Sources */,
-				74ABD78023D8BD1D006D9034 /* HomeControl.swift in Sources */,
 				4BA8839A23D8701D00E83537 /* SceneDelegate.swift in Sources */,
-				4BA883B223D8BF9E00E83537 /* AdicionarAtividadeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
