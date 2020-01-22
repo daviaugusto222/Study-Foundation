@@ -44,11 +44,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
         
     }
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let nome: String = atividades[indexPath.row]
-//        self.performSegue(withIdentifier: "detalheDaAtividade", sender: nome)
-//
-//    }
-//
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let nome: String = atividades[indexPath.row]
+            self.performSegue(withIdentifier: "detalheDaAtividade", sender: nome)
+    
+    }
+
     
 }
