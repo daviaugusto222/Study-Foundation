@@ -15,7 +15,6 @@ class JornadaTableViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         Jornadas.dataSource = self
         Jornadas.delegate = self
     }
@@ -29,9 +28,10 @@ class JornadaTableViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return jornadasArray.count
     }
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Jornadas", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Jornadas", for: indexPath) as! JornadaCell
         
         cell.textLabel!.text = jornadasArray[indexPath.row]
 
