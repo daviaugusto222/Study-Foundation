@@ -39,8 +39,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell.init(style: .default, reuseIdentifier: nil)
+        //let cell = UITableViewCell.init(style: .default, reuseIdentifier: nil)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Atividades", for: indexPath) as! AtividadeCell
+        
         cell.textLabel?.text = atividades[indexPath.row]
+        cell.layer.cornerRadius = 6
+        cell.layer.borderWidth = 100.0
+        cell.layer.shadowOpacity = 0.7
+        
+        
         return cell
         
     }
