@@ -15,10 +15,21 @@ var position = 0
 class JornadaTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var Jornadas: UITableView!
     
+    var selected: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Jornadas.dataSource = self
         Jornadas.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if let selected = selected {
+            position = selected
+            performSegue(withIdentifier: "segue", sender: self)
+            self.selected = nil
+        }
     }
 
     // MARK: - Table view data source

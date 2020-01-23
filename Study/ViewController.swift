@@ -33,8 +33,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 destiny.detailText = "\(sendedNome) veio hoje"
             
             }
+        if let destinity = segue.destination as? JornadaTableViewController {
+            destinity.selected = 0
+        }
         
     }
+    
+    @IBAction func buttonAction(_ sender: UIButton) {
+        if let controller = self.tabBarController?.viewControllers?[1] as? JornadaTableViewController {
+            controller.selected = 0
+            self.tabBarController?.selectedIndex = 1
+
+        }
+    
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1 //atividades.count
     }

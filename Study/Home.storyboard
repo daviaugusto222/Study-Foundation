@@ -101,20 +101,14 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H3F-Bw-klt">
-                                <rect key="frame" x="16" y="66" width="343" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsq-ZY-LhI">
+                                <rect key="frame" x="164" y="90" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ual-Tr-T6l">
-                                        <rect key="frame" x="150" y="54" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="lvV-PA-PoZ" eventType="touchUpInside" id="DMj-hU-rQE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="osJ-kE-Ga1"/>
@@ -131,6 +125,7 @@
                     <connections>
                         <outlet property="tableView" destination="YpX-Dy-XKw" id="glW-Nw-bDg"/>
                         <segue destination="kMS-bC-YKY" kind="show" identifier="detalheDaAtividade" id="tqK-bx-NzZ"/>
+                        <segue destination="0RY-Gx-cS9" kind="show" identifier="jornada" id="Sjm-7p-9CE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fH-qE-4rp" sceneMemberID="firstResponder"/>
@@ -292,6 +287,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9KN-m8-JYD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1189.5999999999999" y="-878.41079460269873"/>
+        </scene>
+        <!--Jornada-->
+        <scene sceneID="c9d-mf-Ury">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Jornada" id="0RY-Gx-cS9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Hlm-ue-xab"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tva-Kc-4Jp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-546" y="-63"/>
         </scene>
     </scenes>
     <resources>
