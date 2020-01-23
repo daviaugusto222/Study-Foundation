@@ -10,15 +10,28 @@ import UIKit
 
 let jornadasArray = ["Beber água", "Alongar", "Fazer exercícios", "Aprender pomodoro", "Aplicar em alguma cadeira", "Tirar 10 na prova", "Zerar a vida"]
 
+let jornadasDescricaoArray = ["Manter-se hidratado é sempre essencial para a sua saúde.", "Antes de qualquer exercícios, sempre bom alongar-se para evitar dores nos músculos.", "Cuide bem do seu corpo com exercícios físicos. Comece pegando leve, aumentando a carga cada vez que se acostumar com o ritmo.", "Técnica.", ]
+
 var position = 0
 
 class JornadaTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var Jornadas: UITableView!
     
+    var selected: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Jornadas.dataSource = self
         Jornadas.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if let selected = selected {
+            position = selected
+            performSegue(withIdentifier: "segue", sender: self)
+            self.selected = nil
+        }
     }
 
     // MARK: - Table view data source
@@ -31,7 +44,6 @@ class JornadaTableViewController: UIViewController, UITableViewDelegate, UITable
         return jornadasArray.count
     }
 
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Jornadas", for: indexPath) as! JornadaCell
         
@@ -44,5 +56,6 @@ class JornadaTableViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         position = indexPath.row
         performSegue(withIdentifier: "segue", sender: self)
+        
     }
 }

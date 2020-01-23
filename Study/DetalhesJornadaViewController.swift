@@ -10,10 +10,13 @@ import UIKit
 
 class DetalhesJornadaViewController: UIViewController {
     @IBOutlet weak var nomeJornada: UILabel!
+    @IBOutlet weak var descricaoJornada: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         nomeJornada.text = jornadasArray[position]
+        
+        descricaoJornada.text = jornadasDescricaoArray[position]
     }
 }

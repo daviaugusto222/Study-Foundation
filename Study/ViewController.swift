@@ -7,6 +7,7 @@
 //
 import Foundation
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -14,8 +15,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
    
     @IBOutlet weak var tableView: UITableView!
+   let cellSpacingHeight: CGFloat = 5
     
-    var atividades: [String] = ["estudar fisica","estudar poo","ensinar meu amigo","revisar quimica"]
+    var atividades: [String] = ["Estudar fisica","Estudar poo","Ensinar meu amigo","Revisar quimica"]
        
     
     override func viewDidLoad() {
@@ -23,6 +25,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
         self.tableView.delegate = self
         self.tableView.dataSource = self
+       
+        createData()
+        retriveData()
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -32,20 +38,40 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 destiny.detailText = "\(sendedNome) veio hoje"
             
             }
+        if let destinity = segue.destination as? JornadaTableViewController {
+            destinity.selected = 0
+        }
         
     }
+    
+    @IBAction func buttonAction(_ sender: UIButton) {
+        if let controller = self.tabBarController?.viewControllers?[1] as? JornadaTableViewController {
+            controller.selected = 0
+            self.tabBarController?.selectedIndex = 1
+
+        }
+    
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return atividades.count
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = UITableViewCell.init(style: .default, reuseIdentifier: nil)
         let cell = tableView.dequeueReusableCell(withIdentifier: "Atividades", for: indexPath) as! AtividadeCell
         
-        cell.textLabel?.text = atividades[indexPath.row]
-        cell.layer.cornerRadius = 6
-        cell.layer.borderWidth = 100.0
-        cell.layer.shadowOpacity = 0.7
+        //cell.textLabel?.text = atividades[indexPath.row]
+        cell.layer.cornerRadius = 7
+        cell.nomeDaAtividade.text = atividades[indexPath.row]
+        cell.data.text = "23"
+        cell.descricao.text = "Estudar para a prova no final de semana"
+        cell.mes.text = "JAN"
+        
+
+    
         
         
         return cell
@@ -56,6 +82,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.performSegue(withIdentifier: "detalheDaAtividade", sender: nome)
     
     }
-
     
+    // Set the spacing between sections
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return cellSpacingHeight
+    }
+
+  
 }
