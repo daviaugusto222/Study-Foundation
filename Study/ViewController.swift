@@ -50,11 +50,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1 //atividades.count
-    }
-    func numberOfSections(in tableView: UITableView) -> Int {
         return atividades.count
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = UITableViewCell.init(style: .default, reuseIdentifier: nil)
