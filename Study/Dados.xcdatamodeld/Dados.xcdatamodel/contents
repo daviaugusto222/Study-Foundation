@@ -2,7 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G103" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Aluno" representedClassName="Aluno" syncable="YES" codeGenerationType="class">
         <attribute name="curso" optional="YES" attributeType="String"/>
-        <attribute name="nascimento" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="nascimento" optional="YES" attributeType="String"/>
         <attribute name="nome" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Atividade" representedClassName="Atividade" syncable="YES" codeGenerationType="class">
@@ -17,8 +17,8 @@
         <attribute name="titulo" optional="YES" attributeType="String"/>
     </entity>
     <elements>
+        <element name="Aluno" positionX="-47.5625" positionY="-159.796875" width="128" height="28"/>
         <element name="Atividade" positionX="-63" positionY="-18" width="128" height="103"/>
-        <element name="Jornada" positionX="-54" positionY="18" width="128" height="88"/>
-        <element name="Aluno" positionX="-36" positionY="27" width="128" height="88"/>
+        <element name="Jornada" positionX="118.62109375" positionY="-32.54296875" width="128" height="88"/>
     </elements>
 </model>

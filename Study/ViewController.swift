@@ -7,6 +7,7 @@
 //
 import Foundation
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -24,6 +25,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
         self.tableView.delegate = self
         self.tableView.dataSource = self
+       
+        createData()
+        retriveData()
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
