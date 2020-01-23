@@ -201,8 +201,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dr-p4-hlc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dr-p4-hlc">
                                 <rect key="frame" x="16" y="280" width="36" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -236,16 +237,12 @@
                                     <action selector="Cadastro:" destination="MSq-vL-xdf" eventType="touchUpInside" id="yGh-kI-oyY"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Nga-Ao-tuP">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Nga-Ao-tuP">
                                 <rect key="frame" x="0.0" y="309" width="375" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Nga-Ao-tuP" firstAttribute="leading" secondItem="gIf-yy-4V9" secondAttribute="leading" id="G6C-hy-aha"/>
-                            <constraint firstItem="Nga-Ao-tuP" firstAttribute="top" secondItem="9Dr-p4-hlc" secondAttribute="bottom" id="klw-Cj-kbi"/>
-                            <constraint firstItem="Nga-Ao-tuP" firstAttribute="trailing" secondItem="gIf-yy-4V9" secondAttribute="trailing" id="wRC-ea-1qc"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gIf-yy-4V9"/>
                     </view>
                     <connections>
