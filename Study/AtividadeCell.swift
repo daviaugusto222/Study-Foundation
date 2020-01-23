@@ -10,6 +10,10 @@ import UIKit
 
 class AtividadeCell: UITableViewCell {
     
+    @IBOutlet weak var nomeDaAtividade: UILabel!
+    @IBOutlet weak var descricao: UILabel!
+    @IBOutlet weak var data: UILabel!
+    @IBOutlet weak var mes: UILabel!
     
 
     override func awakeFromNib() {
