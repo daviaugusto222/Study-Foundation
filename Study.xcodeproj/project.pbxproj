@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C72610E23D9B92F00D06ADE /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72610D23D9B92F00D06ADE /* PerfilViewController.swift */; };
+		2C72611023D9B9CD00D06ADE /* EditarPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72610F23D9B9CD00D06ADE /* EditarPerfilViewController.swift */; };
 		4BA8839823D8701D00E83537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA8839723D8701D00E83537 /* AppDelegate.swift */; };
 		4BA8839A23D8701D00E83537 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA8839923D8701D00E83537 /* SceneDelegate.swift */; };
 		4BA8839C23D8701D00E83537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA8839B23D8701D00E83537 /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C72610D23D9B92F00D06ADE /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		2C72610F23D9B9CD00D06ADE /* EditarPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarPerfilViewController.swift; sourceTree = "<group>"; };
 		4BA8839423D8701D00E83537 /* Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA8839723D8701D00E83537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BA8839923D8701D00E83537 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 				9A728DD223D8DCA9000260ED /* JornadaCell.swift */,
 				9A7357D423D8CA4300213816 /* JornadaTableViewController.swift */,
 				4BA883AD23D8874900E83537 /* Perfil.storyboard */,
+				2C72610D23D9B92F00D06ADE /* PerfilViewController.swift */,
+				2C72610F23D9B9CD00D06ADE /* EditarPerfilViewController.swift */,
 				4BA8839B23D8701D00E83537 /* ViewController.swift */,
 				74ABD78523D8D3C0006D9034 /* DetalheAtividade.storyboard */,
 				74D8635D23D88BD800D5A008 /* Home.storyboard */,
@@ -165,10 +171,11 @@
 			files = (
 				74ABD78423D8CADA006D9034 /* DetalheAtividadeViewController.swift in Sources */,
 				4BA8839C23D8701D00E83537 /* ViewController.swift in Sources */,
+				2C72611023D9B9CD00D06ADE /* EditarPerfilViewController.swift in Sources */,
 				4BA8839823D8701D00E83537 /* AppDelegate.swift in Sources */,
 				9A7357D523D8CA4300213816 /* JornadaTableViewController.swift in Sources */,
 				9A728DD323D8DCA9000260ED /* JornadaCell.swift in Sources */,
-				74ABD78023D8BD1D006D9034 /* HomeControl.swift in Sources */,
+				2C72610E23D9B92F00D06ADE /* PerfilViewController.swift in Sources */,
 				4BA8839A23D8701D00E83537 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
