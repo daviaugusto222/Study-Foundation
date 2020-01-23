@@ -41,11 +41,11 @@
         <scene sceneID="Wk3-0w-oRP">
             <objects>
                 <viewControllerPlaceholder storyboardName="Jornada" id="G8c-nD-XSr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="PDu-nh-q9L"/>
+                    <tabBarItem key="tabBarItem" title="Jornada" image="map" catalog="system" id="PDu-nh-q9L"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="US6-x4-apx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="224" y="554"/>
+            <point key="canvasLocation" x="181" y="553"/>
         </scene>
         <!--Home-->
         <scene sceneID="AcY-6g-uOP">
@@ -58,4 +58,7 @@
             <point key="canvasLocation" x="-32" y="554"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map" catalog="system" width="64" height="56"/>
+    </resources>
 </document>

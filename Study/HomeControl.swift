@@ -7,26 +7,3 @@
 //
 
 import Foundation
-import UIKit
-
-class listaDeAtividades: UIViewController {
-    
-    
-    var atividades: [String] = [] {
-        didSet{
-            DispatchQueue.main.async {
-                
-            }
-            
-        }
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
-    
-    
-}

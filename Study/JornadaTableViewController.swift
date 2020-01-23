@@ -11,11 +11,10 @@ import UIKit
 class JornadaTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var Jornadas: UITableView!
     
-    let jornadasArray = ["Beber água", "Alongar", "Fazer exercícios"]
+    let jornadasArray = ["Beber água", "Alongar", "Fazer exercícios", "Aprender pomodoro", "Aplicar em alguma cadeira", "Tirar 10 na prova", "Zerar a vida"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         Jornadas.dataSource = self
         Jornadas.delegate = self
     }
@@ -29,9 +28,10 @@ class JornadaTableViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return jornadasArray.count
     }
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Jornadas", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Jornadas", for: indexPath) as! JornadaCell
         
         cell.textLabel!.text = jornadasArray[indexPath.row]
 

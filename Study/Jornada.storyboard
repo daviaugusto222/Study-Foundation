@@ -8,31 +8,57 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Jornada Table View Controller-->
+        <!--Jornada-->
         <scene sceneID="c7o-bt-Qc7">
             <objects>
-                <viewController id="2Ms-W1-SvD" customClass="JornadaTableViewController" customModule="Study" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Jornada" id="2Ms-W1-SvD" customClass="JornadaTableViewController" customModule="Study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZtB-41-aH7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Esh-p4-axb">
-                                <rect key="frame" x="57" y="235" width="240" height="380"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jornada do conhecimento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHs-CV-hmt">
+                                <rect key="frame" x="30" y="30" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Esh-p4-axb">
+                                <rect key="frame" x="30" y="81" width="329" height="586"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Jornadas" id="NSE-fR-RHW">
-                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Jornadas" rowHeight="100" id="NSE-fR-RHW" customClass="JornadaCell" customModule="Study" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="329" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NSE-fR-RHW" id="7Zw-cg-tU5">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="329" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v79-x6-KHv">
+                                                    <rect key="frame" x="0.0" y="5" width="329" height="90"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="v79-x6-KHv" secondAttribute="trailing" id="3bZ-Oh-MWq"/>
+                                                <constraint firstAttribute="bottom" secondItem="v79-x6-KHv" secondAttribute="bottom" constant="5" id="9dF-H9-zhl"/>
+                                                <constraint firstItem="v79-x6-KHv" firstAttribute="leading" secondItem="7Zw-cg-tU5" secondAttribute="leading" id="Pii-E4-ga6"/>
+                                                <constraint firstItem="v79-x6-KHv" firstAttribute="top" secondItem="7Zw-cg-tU5" secondAttribute="top" constant="5" id="ck4-My-tOE"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NHs-CV-hmt" firstAttribute="leading" secondItem="2rQ-RR-LwV" secondAttribute="leading" constant="30" id="5Fi-4Q-oUE"/>
+                            <constraint firstItem="Esh-p4-axb" firstAttribute="top" secondItem="NHs-CV-hmt" secondAttribute="bottom" constant="30" id="A4v-fp-Eec"/>
+                            <constraint firstItem="NHs-CV-hmt" firstAttribute="top" secondItem="2rQ-RR-LwV" secondAttribute="top" constant="30" id="C5e-eH-WVF"/>
+                            <constraint firstItem="Esh-p4-axb" firstAttribute="leading" secondItem="2rQ-RR-LwV" secondAttribute="leading" constant="30" id="DVI-Yl-Sgw"/>
+                            <constraint firstItem="2rQ-RR-LwV" firstAttribute="bottom" secondItem="Esh-p4-axb" secondAttribute="bottom" id="jEi-T8-twu"/>
+                            <constraint firstItem="2rQ-RR-LwV" firstAttribute="trailing" secondItem="Esh-p4-axb" secondAttribute="trailing" constant="16" id="uJT-hh-lAv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2rQ-RR-LwV"/>
                     </view>
                     <connections>
