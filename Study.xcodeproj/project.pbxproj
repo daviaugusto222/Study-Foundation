@@ -77,9 +77,9 @@
 				9A728DD223D8DCA9000260ED /* JornadaCell.swift */,
 				9A7357D423D8CA4300213816 /* JornadaTableViewController.swift */,
 				4BA883AD23D8874900E83537 /* Perfil.storyboard */,
+				74D8635D23D88BD800D5A008 /* Home.storyboard */,
 				4BA8839B23D8701D00E83537 /* ViewController.swift */,
 				74ABD78523D8D3C0006D9034 /* DetalheAtividade.storyboard */,
-				74D8635D23D88BD800D5A008 /* Home.storyboard */,
 				74ABD78323D8CADA006D9034 /* DetalheAtividadeViewController.swift */,
 				4BA883A023D8701F00E83537 /* Assets.xcassets */,
 				4BA883A223D8701F00E83537 /* LaunchScreen.storyboard */,
@@ -168,7 +168,6 @@
 				4BA8839823D8701D00E83537 /* AppDelegate.swift in Sources */,
 				9A7357D523D8CA4300213816 /* JornadaTableViewController.swift in Sources */,
 				9A728DD323D8DCA9000260ED /* JornadaCell.swift in Sources */,
-				74ABD78023D8BD1D006D9034 /* HomeControl.swift in Sources */,
 				4BA8839A23D8701D00E83537 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
