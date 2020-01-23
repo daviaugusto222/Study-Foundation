@@ -40,12 +40,12 @@
         <!--Jornada-->
         <scene sceneID="Wk3-0w-oRP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="US6-x4-apx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Jornada" id="G8c-nD-XSr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Jornada" image="map" catalog="system" id="PDu-nh-q9L"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="US6-x4-apx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131" y="601"/>
+            <point key="canvasLocation" x="181" y="553"/>
         </scene>
         <!--Home-->
         <scene sceneID="AcY-6g-uOP">
