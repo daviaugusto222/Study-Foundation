@@ -9,8 +9,6 @@
 import UIKit
 
 class JornadaCell: UITableViewCell {
-    
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,5 +20,4 @@ class JornadaCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
