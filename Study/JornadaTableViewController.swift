@@ -45,5 +45,6 @@ class JornadaTableViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         position = indexPath.row
         performSegue(withIdentifier: "segue", sender: self)
+        
     }
 }
