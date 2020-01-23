@@ -17,6 +17,7 @@
 		4BA883A423D8701F00E83537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883A223D8701F00E83537 /* LaunchScreen.storyboard */; };
 		4BA883AC23D886D500E83537 /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883AB23D886D500E83537 /* Jornada.storyboard */; };
 		4BA883AE23D8874900E83537 /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883AD23D8874900E83537 /* Perfil.storyboard */; };
+		4BD5893023D9FEE4001EE5C3 /* AtividadeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5892F23D9FEE4001EE5C3 /* AtividadeCell.swift */; };
 		74ABD78423D8CADA006D9034 /* DetalheAtividadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ABD78323D8CADA006D9034 /* DetalheAtividadeViewController.swift */; };
 		74ABD78623D8D3C0006D9034 /* DetalheAtividade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74ABD78523D8D3C0006D9034 /* DetalheAtividade.storyboard */; };
 		74D8635E23D88BD800D5A008 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D8635D23D88BD800D5A008 /* Home.storyboard */; };
@@ -37,6 +38,7 @@
 		4BA883A523D8701F00E83537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BA883AB23D886D500E83537 /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
 		4BA883AD23D8874900E83537 /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
+		4BD5892F23D9FEE4001EE5C3 /* AtividadeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtividadeCell.swift; sourceTree = "<group>"; };
 		74ABD78323D8CADA006D9034 /* DetalheAtividadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheAtividadeViewController.swift; sourceTree = "<group>"; };
 		74ABD78523D8D3C0006D9034 /* DetalheAtividade.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetalheAtividade.storyboard; sourceTree = "<group>"; };
 		74D8635D23D88BD800D5A008 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				2C72610F23D9B9CD00D06ADE /* EditarPerfilViewController.swift */,
 				74D8635D23D88BD800D5A008 /* Home.storyboard */,
 				4BA8839B23D8701D00E83537 /* ViewController.swift */,
+				4BD5892F23D9FEE4001EE5C3 /* AtividadeCell.swift */,
 				74ABD78523D8D3C0006D9034 /* DetalheAtividade.storyboard */,
 				74ABD78323D8CADA006D9034 /* DetalheAtividadeViewController.swift */,
 				4BA883A023D8701F00E83537 /* Assets.xcassets */,
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74ABD78423D8CADA006D9034 /* DetalheAtividadeViewController.swift in Sources */,
+				4BD5893023D9FEE4001EE5C3 /* AtividadeCell.swift in Sources */,
 				4BA8839C23D8701D00E83537 /* ViewController.swift in Sources */,
 				2C72611023D9B9CD00D06ADE /* EditarPerfilViewController.swift in Sources */,
 				4BA8839823D8701D00E83537 /* AppDelegate.swift in Sources */,
