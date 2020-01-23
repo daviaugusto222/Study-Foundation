@@ -18,6 +18,9 @@
 		4BA883AC23D886D500E83537 /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883AB23D886D500E83537 /* Jornada.storyboard */; };
 		4BA883AE23D8874900E83537 /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA883AD23D8874900E83537 /* Perfil.storyboard */; };
 		4BD5893023D9FEE4001EE5C3 /* AtividadeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5892F23D9FEE4001EE5C3 /* AtividadeCell.swift */; };
+		740485BE23DA1550005BABD8 /* Dados.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 740485BC23DA1550005BABD8 /* Dados.xcdatamodeld */; };
+		740485C223DA1B11005BABD8 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740485C123DA1B11005BABD8 /* CadastroViewController.swift */; };
+		7404860323DA3FC9005BABD8 /* testeDataCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404860223DA3FC9005BABD8 /* testeDataCore.swift */; };
 		74ABD78423D8CADA006D9034 /* DetalheAtividadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ABD78323D8CADA006D9034 /* DetalheAtividadeViewController.swift */; };
 		74ABD78623D8D3C0006D9034 /* DetalheAtividade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74ABD78523D8D3C0006D9034 /* DetalheAtividade.storyboard */; };
 		74D8635E23D88BD800D5A008 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D8635D23D88BD800D5A008 /* Home.storyboard */; };
@@ -40,6 +43,9 @@
 		4BA883AB23D886D500E83537 /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
 		4BA883AD23D8874900E83537 /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
 		4BD5892F23D9FEE4001EE5C3 /* AtividadeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtividadeCell.swift; sourceTree = "<group>"; };
+		740485BD23DA1550005BABD8 /* Dados.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dados.xcdatamodel; sourceTree = "<group>"; };
+		740485C123DA1B11005BABD8 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		7404860223DA3FC9005BABD8 /* testeDataCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testeDataCore.swift; sourceTree = "<group>"; };
 		74ABD78323D8CADA006D9034 /* DetalheAtividadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheAtividadeViewController.swift; sourceTree = "<group>"; };
 		74ABD78523D8D3C0006D9034 /* DetalheAtividade.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetalheAtividade.storyboard; sourceTree = "<group>"; };
 		74D8635D23D88BD800D5A008 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -89,6 +95,8 @@
 				2C72610F23D9B9CD00D06ADE /* EditarPerfilViewController.swift */,
 				74D8635D23D88BD800D5A008 /* Home.storyboard */,
 				4BA8839B23D8701D00E83537 /* ViewController.swift */,
+				7404860223DA3FC9005BABD8 /* testeDataCore.swift */,
+				740485C123DA1B11005BABD8 /* CadastroViewController.swift */,
 				4BD5892F23D9FEE4001EE5C3 /* AtividadeCell.swift */,
 				74ABD78523D8D3C0006D9034 /* DetalheAtividade.storyboard */,
 				74ABD78323D8CADA006D9034 /* DetalheAtividadeViewController.swift */,
@@ -96,6 +104,8 @@
 				4BA883A023D8701F00E83537 /* Assets.xcassets */,
 				4BA883A223D8701F00E83537 /* LaunchScreen.storyboard */,
 				4BA883A523D8701F00E83537 /* Info.plist */,
+				740485BC23DA1550005BABD8 /* Dados.xcdatamodeld */,
+				9A6BE67A23DA0AC200167BB2 /* DetalhesJornadaViewController.swift */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -183,8 +193,11 @@
 				9A6BE67B23DA0AC300167BB2 /* DetalhesJornadaViewController.swift in Sources */,
 				9A7357D523D8CA4300213816 /* JornadaTableViewController.swift in Sources */,
 				9A728DD323D8DCA9000260ED /* JornadaCell.swift in Sources */,
+				740485C223DA1B11005BABD8 /* CadastroViewController.swift in Sources */,
 				2C72610E23D9B92F00D06ADE /* PerfilViewController.swift in Sources */,
 				4BA8839A23D8701D00E83537 /* SceneDelegate.swift in Sources */,
+				7404860323DA3FC9005BABD8 /* testeDataCore.swift in Sources */,
+				740485BE23DA1550005BABD8 /* Dados.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +395,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		740485BC23DA1550005BABD8 /* Dados.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				740485BD23DA1550005BABD8 /* Dados.xcdatamodel */,
+			);
+			currentVersion = 740485BD23DA1550005BABD8 /* Dados.xcdatamodel */;
+			path = Dados.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4BA8838C23D8701D00E83537 /* Project object */;
 }
