@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Ms-W1-SvD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CVR-OJ-xAL">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -69,7 +69,7 @@
                     <navigationItem key="navigationItem" id="70t-2s-R8Q"/>
                     <connections>
                         <outlet property="Jornadas" destination="Esh-p4-axb" id="6Ep-5p-PBZ"/>
-                        <segue destination="r3m-tm-LdT" kind="presentation" identifier="segue" id="D4S-vQ-G9R"/>
+                        <segue destination="r3m-tm-LdT" kind="show" identifier="segue" id="D4S-vQ-G9R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7Q-fE-td2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -97,29 +97,29 @@
             <objects>
                 <viewController id="r3m-tm-LdT" customClass="DetalhesJornadaViewController" customModule="Study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wZF-WG-RGD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome Jornada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yJ-Qz-OXa">
-                                <rect key="frame" x="118.5" y="70" width="138" height="24"/>
+                                <rect key="frame" x="118.5" y="114" width="138" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-sH-Od3">
-                                <rect key="frame" x="16" y="214" width="82" height="21"/>
+                                <rect key="frame" x="16" y="258" width="82" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBA-sX-8WZ">
-                                <rect key="frame" x="30" y="134" width="315" height="30"/>
+                                <rect key="frame" x="30" y="178" width="315" height="30"/>
                                 <state key="normal" title="Concluir Jornada">
                                     <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW6-0L-kwa">
-                                <rect key="frame" x="30" y="245" width="315" height="20.5"/>
+                                <rect key="frame" x="30" y="289" width="315" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -141,6 +141,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="72x-pC-7V5"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Jda-rb-Zdq"/>
                     <connections>
                         <outlet property="descricaoJornada" destination="hW6-0L-kwa" id="pqv-XR-r1O"/>
                         <outlet property="nomeJornada" destination="2yJ-Qz-OXa" id="3kw-j0-W5n"/>
