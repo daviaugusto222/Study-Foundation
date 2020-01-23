@@ -8,10 +8,12 @@
 
 import UIKit
 
+let jornadasArray = ["Beber água", "Alongar", "Fazer exercícios", "Aprender pomodoro", "Aplicar em alguma cadeira", "Tirar 10 na prova", "Zerar a vida"]
+
+var position = 0
+
 class JornadaTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var Jornadas: UITableView!
-    
-    let jornadasArray = ["Beber água", "Alongar", "Fazer exercícios", "Aprender pomodoro", "Aplicar em alguma cadeira", "Tirar 10 na prova", "Zerar a vida"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +36,13 @@ class JornadaTableViewController: UIViewController, UITableViewDelegate, UITable
         let cell = tableView.dequeueReusableCell(withIdentifier: "Jornadas", for: indexPath) as! JornadaCell
         
         cell.textLabel!.text = jornadasArray[indexPath.row]
+        cell.layer.cornerRadius = 5
 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        position = indexPath.row
+        performSegue(withIdentifier: "segue", sender: self)
     }
 }
