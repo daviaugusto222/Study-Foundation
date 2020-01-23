@@ -66,7 +66,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2rQ-RR-LwV"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Jornada" image="map" catalog="system" id="YZA-BS-wBV"/>
                     <navigationItem key="navigationItem" id="70t-2s-R8Q"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="Jornadas" destination="Esh-p4-axb" id="6Ep-5p-PBZ"/>
                         <segue destination="r3m-tm-LdT" kind="show" identifier="segue" id="D4S-vQ-G9R"/>
@@ -152,4 +154,7 @@
             <point key="canvasLocation" x="1620" y="-232.53373313343329"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
