@@ -25,9 +25,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
         self.tableView.delegate = self
         self.tableView.dataSource = self
-       
+    
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        
+        self.tableView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -47,8 +50,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if let controller = self.tabBarController?.viewControllers?[1] as? JornadaTableViewController {
             controller.selected = 0
             self.tabBarController?.selectedIndex = 1
-
         }
+        
     
     }
     
@@ -71,7 +74,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Atividades", for: indexPath) as! AtividadeCell
-        cell.layer.cornerRadius = 7
+        
         let result = Atividade.get()
                  switch result {
                  case .success(let atv):

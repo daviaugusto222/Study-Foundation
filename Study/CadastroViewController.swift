@@ -37,7 +37,10 @@ class CadastroViewController: UIViewController {
           default:
               print("Salvou")
           }
-          
+        
+        
+        self.navigationController?.dismiss(animated: true)
+        self.dismiss(animated: true)
         
          
         
