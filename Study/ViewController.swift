@@ -26,8 +26,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.delegate = self
         self.tableView.dataSource = self
        
-        createData()
-        retriveData()
+        
         
     }
     
@@ -55,23 +54,37 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return atividades.count
+        let result = Atividade.get()
+        switch result {
+        case .success(let atv):
+           
+            return atv.count
+           
+           
+        default:
+            print("error")
+        }
+        return 0
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = UITableViewCell.init(style: .default, reuseIdentifier: nil)
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Atividades", for: indexPath) as! AtividadeCell
-        
-        //cell.textLabel?.text = atividades[indexPath.row]
         cell.layer.cornerRadius = 7
-        cell.nomeDaAtividade.text = atividades[indexPath.row]
-        cell.data.text = "23"
-        cell.descricao.text = "Estudar para a prova no final de semana"
-        cell.mes.text = "JAN"
-        
-
-    
+        let result = Atividade.get()
+                 switch result {
+                 case .success(let atv):
+                    
+                    cell.nomeDaAtividade.text = atv[indexPath.row].nome
+                    cell.data.text = "27"
+                    cell.descricao.text = atv[indexPath.row].descricao
+                    cell.mes.text = "JAN"
+                    
+                    
+                 default:
+                     print("error")
+                 }
         
         
         return cell

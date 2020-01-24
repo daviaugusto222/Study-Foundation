@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		2C72610E23D9B92F00D06ADE /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72610D23D9B92F00D06ADE /* PerfilViewController.swift */; };
 		2C72611023D9B9CD00D06ADE /* EditarPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72610F23D9B9CD00D06ADE /* EditarPerfilViewController.swift */; };
+		4B46021A23DB15C60075CB53 /* AtividadeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B46021923DB15C60075CB53 /* AtividadeExtension.swift */; };
+		4B46022123DB16EE0075CB53 /* Jornada+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B46021B23DB16EE0075CB53 /* Jornada+CoreDataClass.swift */; };
+		4B46022223DB16EE0075CB53 /* Jornada+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B46021C23DB16EE0075CB53 /* Jornada+CoreDataProperties.swift */; };
+		4B46022323DB16EE0075CB53 /* Aluno+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B46021D23DB16EE0075CB53 /* Aluno+CoreDataClass.swift */; };
+		4B46022423DB16EE0075CB53 /* Aluno+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B46021E23DB16EE0075CB53 /* Aluno+CoreDataProperties.swift */; };
+		4B46022523DB16EE0075CB53 /* Atividade+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B46021F23DB16EE0075CB53 /* Atividade+CoreDataClass.swift */; };
+		4B46022623DB16EE0075CB53 /* Atividade+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B46022023DB16EE0075CB53 /* Atividade+CoreDataProperties.swift */; };
+		4B46022923DB17970075CB53 /* CoreDataCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B46022823DB17970075CB53 /* CoreDataCRUD.swift */; };
+		4B46022B23DB184C0075CB53 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B46022A23DB184C0075CB53 /* DataManager.swift */; };
 		4BA8839823D8701D00E83537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA8839723D8701D00E83537 /* AppDelegate.swift */; };
 		4BA8839A23D8701D00E83537 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA8839923D8701D00E83537 /* SceneDelegate.swift */; };
 		4BA8839C23D8701D00E83537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA8839B23D8701D00E83537 /* ViewController.swift */; };
@@ -32,6 +41,15 @@
 /* Begin PBXFileReference section */
 		2C72610D23D9B92F00D06ADE /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		2C72610F23D9B9CD00D06ADE /* EditarPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarPerfilViewController.swift; sourceTree = "<group>"; };
+		4B46021923DB15C60075CB53 /* AtividadeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtividadeExtension.swift; sourceTree = "<group>"; };
+		4B46021B23DB16EE0075CB53 /* Jornada+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Jornada+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4B46021C23DB16EE0075CB53 /* Jornada+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Jornada+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4B46021D23DB16EE0075CB53 /* Aluno+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Aluno+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4B46021E23DB16EE0075CB53 /* Aluno+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Aluno+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4B46021F23DB16EE0075CB53 /* Atividade+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atividade+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4B46022023DB16EE0075CB53 /* Atividade+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atividade+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4B46022823DB17970075CB53 /* CoreDataCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataCRUD.swift; sourceTree = "<group>"; };
+		4B46022A23DB184C0075CB53 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		4BA8839423D8701D00E83537 /* Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA8839723D8701D00E83537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BA8839923D8701D00E83537 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +83,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B46022723DB16F60075CB53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B46021B23DB16EE0075CB53 /* Jornada+CoreDataClass.swift */,
+				4B46021C23DB16EE0075CB53 /* Jornada+CoreDataProperties.swift */,
+				4B46021D23DB16EE0075CB53 /* Aluno+CoreDataClass.swift */,
+				4B46021E23DB16EE0075CB53 /* Aluno+CoreDataProperties.swift */,
+				4B46021F23DB16EE0075CB53 /* Atividade+CoreDataClass.swift */,
+				4B46022023DB16EE0075CB53 /* Atividade+CoreDataProperties.swift */,
+				4B46021923DB15C60075CB53 /* AtividadeExtension.swift */,
+				4B46022823DB17970075CB53 /* CoreDataCRUD.swift */,
+				4B46022A23DB184C0075CB53 /* DataManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4BA8838B23D8701D00E83537 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +118,7 @@
 		4BA8839623D8701D00E83537 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				4B46022723DB16F60075CB53 /* Models */,
 				4BA8839723D8701D00E83537 /* AppDelegate.swift */,
 				4BA8839923D8701D00E83537 /* SceneDelegate.swift */,
 				4BA8839D23D8701D00E83537 /* Main.storyboard */,
@@ -100,7 +135,6 @@
 				4BD5892F23D9FEE4001EE5C3 /* AtividadeCell.swift */,
 				74ABD78523D8D3C0006D9034 /* DetalheAtividade.storyboard */,
 				74ABD78323D8CADA006D9034 /* DetalheAtividadeViewController.swift */,
-				9A6BE67A23DA0AC200167BB2 /* DetalhesJornadaViewController.swift */,
 				4BA883A023D8701F00E83537 /* Assets.xcassets */,
 				4BA883A223D8701F00E83537 /* LaunchScreen.storyboard */,
 				4BA883A523D8701F00E83537 /* Info.plist */,
@@ -186,16 +220,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				74ABD78423D8CADA006D9034 /* DetalheAtividadeViewController.swift in Sources */,
+				4B46022123DB16EE0075CB53 /* Jornada+CoreDataClass.swift in Sources */,
+				4B46022523DB16EE0075CB53 /* Atividade+CoreDataClass.swift in Sources */,
 				4BD5893023D9FEE4001EE5C3 /* AtividadeCell.swift in Sources */,
+				4B46022423DB16EE0075CB53 /* Aluno+CoreDataProperties.swift in Sources */,
 				4BA8839C23D8701D00E83537 /* ViewController.swift in Sources */,
 				2C72611023D9B9CD00D06ADE /* EditarPerfilViewController.swift in Sources */,
+				4B46022623DB16EE0075CB53 /* Atividade+CoreDataProperties.swift in Sources */,
 				4BA8839823D8701D00E83537 /* AppDelegate.swift in Sources */,
 				9A6BE67B23DA0AC300167BB2 /* DetalhesJornadaViewController.swift in Sources */,
 				9A7357D523D8CA4300213816 /* JornadaTableViewController.swift in Sources */,
+				4B46021A23DB15C60075CB53 /* AtividadeExtension.swift in Sources */,
 				9A728DD323D8DCA9000260ED /* JornadaCell.swift in Sources */,
+				4B46022223DB16EE0075CB53 /* Jornada+CoreDataProperties.swift in Sources */,
 				740485C223DA1B11005BABD8 /* CadastroViewController.swift in Sources */,
+				4B46022323DB16EE0075CB53 /* Aluno+CoreDataClass.swift in Sources */,
 				2C72610E23D9B92F00D06ADE /* PerfilViewController.swift in Sources */,
 				4BA8839A23D8701D00E83537 /* SceneDelegate.swift in Sources */,
+				4B46022923DB17970075CB53 /* CoreDataCRUD.swift in Sources */,
+				4B46022B23DB184C0075CB53 /* DataManager.swift in Sources */,
 				7404860323DA3FC9005BABD8 /* testeDataCore.swift in Sources */,
 				740485BE23DA1550005BABD8 /* Dados.xcdatamodeld in Sources */,
 			);

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G103" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Aluno" representedClassName="Aluno" syncable="YES" codeGenerationType="class">
+    <entity name="Aluno" representedClassName="Aluno" syncable="YES">
         <attribute name="curso" optional="YES" attributeType="String"/>
         <attribute name="nascimento" optional="YES" attributeType="String"/>
         <attribute name="nome" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="Atividade" representedClassName="Atividade" syncable="YES" codeGenerationType="class">
+    <entity name="Atividade" representedClassName="Atividade" syncable="YES">
         <attribute name="data" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="descricao" optional="YES" attributeType="String"/>
         <attribute name="nome" optional="YES" attributeType="String"/>
         <attribute name="tags" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="Jornada" representedClassName="Jornada" syncable="YES" codeGenerationType="class">
+    <entity name="Jornada" representedClassName="Jornada" syncable="YES">
         <attribute name="concuido" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="descricao" optional="YES" attributeType="String"/>
         <attribute name="titulo" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Aluno" positionX="-47.5625" positionY="-159.796875" width="128" height="28"/>
+        <element name="Aluno" positionX="-47.5625" positionY="-159.796875" width="128" height="88"/>
         <element name="Atividade" positionX="-63" positionY="-18" width="128" height="103"/>
         <element name="Jornada" positionX="118.62109375" positionY="-32.54296875" width="128" height="88"/>
     </elements>

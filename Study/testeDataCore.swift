@@ -1,3 +1,4 @@
+
 //
 //  testeDataCore.swift
 //  Study
@@ -12,7 +13,7 @@ import UIKit
 
 func createData() {
     
-    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+    guard let appDelegate = UIApplication.shared.delegate as? DataManager else {return}
     
     
     let context = appDelegate.persistentContainer.viewContext
@@ -42,11 +43,11 @@ func createData() {
 
 func retriveData(){
     
-    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+    guard let appDelegate = UIApplication.shared.delegate as? DataManager else {return}
     
     let context = appDelegate.persistentContainer.viewContext
            
-    let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Aluno")
+    let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Atividade")
     
     do {
         let result = try context.fetch(fetchRequest)

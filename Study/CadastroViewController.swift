@@ -28,6 +28,19 @@ class CadastroViewController: UIViewController {
     @IBAction func Cadastro(_ sender: Any) {
         
         
+        let atividade = Atividade(nome: nomeAtividade!.text!, descricao: descricao!.text!, tags: tags!.text!, data: Data.date)
+          let resultAtv = atividade?.save()
+        
+          switch resultAtv {
+          case .failure(let error):
+              print(error.localizedDescription)
+          default:
+              print("Salvou")
+          }
+          
+        
+         
+        
     }
     /*
     // MARK: - Navigation
