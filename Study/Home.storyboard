@@ -275,6 +275,7 @@
                         <viewLayoutGuide key="safeArea" id="gIf-yy-4V9"/>
                     </view>
                     <connections>
+                        <outlet property="Data" destination="yij-eF-ENg" id="TqF-lm-zaA"/>
                         <outlet property="descricao" destination="y4I-R8-kOU" id="RFU-dZ-yTr"/>
                         <outlet property="nomeAtividade" destination="pKP-ho-nEF" id="Ia7-cd-WUO"/>
                         <outlet property="tags" destination="o6j-5D-8VV" id="A9Y-3g-bU0"/>
