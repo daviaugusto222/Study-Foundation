@@ -19,4 +19,7 @@ extension Atividade: CRUD {
         self.tags = tags
         self.data = data
     }
+    
+    
+    
 }

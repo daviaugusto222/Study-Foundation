@@ -71,7 +71,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alien" translatesAutoresizingMaskIntoConstraints="NO" id="00B-nB-TAR">
-                                <rect key="frame" x="129" y="62" width="117.00000000000045" height="118"/>
+                                <rect key="frame" x="129" y="62" width="117" height="118"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="118" id="2Ou-ig-IM4"/>
                                     <constraint firstAttribute="width" secondItem="00B-nB-TAR" secondAttribute="height" multiplier="139:140" id="d0h-F9-kNd"/>

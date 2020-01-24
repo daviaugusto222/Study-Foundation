@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="80" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="YpX-Dy-XKw">
-                                <rect key="frame" x="6" y="226" width="363" height="421"/>
+                                <rect key="frame" x="6" y="230" width="363" height="417"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Atividades" rowHeight="95" id="3xW-pB-Q65" customClass="AtividadeCell" customModule="Study" customModuleProvider="target">
@@ -111,23 +111,20 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsq-ZY-LhI">
-                                <rect key="frame" x="164" y="90" width="47" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="buttonAction:" destination="lvV-PA-PoZ" eventType="touchUpInside" id="DMj-hU-rQE"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_book_reading_kx9s" translatesAutoresizingMaskIntoConstraints="NO" id="ULS-Nm-ab6">
+                                <rect key="frame" x="11" y="52" width="352" height="170"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="osJ-kE-Ga1" firstAttribute="trailing" secondItem="ULS-Nm-ab6" secondAttribute="trailing" constant="12" id="4xY-BA-vxx"/>
                             <constraint firstItem="osJ-kE-Ga1" firstAttribute="trailing" secondItem="YpX-Dy-XKw" secondAttribute="trailing" constant="6" id="Cal-gM-KzU"/>
+                            <constraint firstItem="YpX-Dy-XKw" firstAttribute="top" secondItem="osJ-kE-Ga1" secondAttribute="top" constant="186" id="GLT-rH-JJZ"/>
                             <constraint firstItem="osJ-kE-Ga1" firstAttribute="bottom" secondItem="YpX-Dy-XKw" secondAttribute="bottom" constant="20" id="HHW-OS-pvX"/>
-                            <constraint firstItem="YpX-Dy-XKw" firstAttribute="top" secondItem="Gsq-ZY-LhI" secondAttribute="bottom" constant="106" id="JSa-hk-NkN"/>
+                            <constraint firstItem="ULS-Nm-ab6" firstAttribute="top" secondItem="osJ-kE-Ga1" secondAttribute="top" constant="8" id="bVV-2y-rJb"/>
+                            <constraint firstItem="ULS-Nm-ab6" firstAttribute="leading" secondItem="osJ-kE-Ga1" secondAttribute="leading" constant="11" id="fNI-bv-QWK"/>
                             <constraint firstItem="YpX-Dy-XKw" firstAttribute="leading" secondItem="osJ-kE-Ga1" secondAttribute="leading" constant="6" id="ikU-Ha-16g"/>
-                            <constraint firstItem="Gsq-ZY-LhI" firstAttribute="centerX" secondItem="YpX-Dy-XKw" secondAttribute="centerX" id="rHU-Jj-kTI"/>
-                            <constraint firstItem="Gsq-ZY-LhI" firstAttribute="top" secondItem="osJ-kE-Ga1" secondAttribute="top" constant="46" id="v08-Ef-w6z"/>
-                            <constraint firstItem="Gsq-ZY-LhI" firstAttribute="leading" secondItem="osJ-kE-Ga1" secondAttribute="leading" constant="164" id="wNz-Wp-sZb"/>
+                            <constraint firstItem="YpX-Dy-XKw" firstAttribute="top" secondItem="ULS-Nm-ab6" secondAttribute="bottom" constant="8" id="kgn-A3-3Zt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="osJ-kE-Ga1"/>
                     </view>
@@ -278,5 +275,6 @@
     <resources>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="plus" catalog="system" width="64" height="56"/>
+        <image name="undraw_book_reading_kx9s" width="1226" height="821"/>
     </resources>
 </document>

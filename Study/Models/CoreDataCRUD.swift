@@ -40,7 +40,6 @@ extension CRUD where Self: NSManagedObject {
         try? Self.context.save()
     }
     
-    
     static func get(predicate: NSPredicate = NSPredicate(value: true) ) -> Result<[Self], Error> {
         let fetchRequest = NSFetchRequest<Self>(entityName: Self.className)
         fetchRequest.predicate = predicate
@@ -52,6 +51,8 @@ extension CRUD where Self: NSManagedObject {
             return Result.failure(error)
         }
     }
+    
+    
 }
 
 enum CoreDataErrors: Error {

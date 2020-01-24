@@ -16,15 +16,20 @@ class DetalheAtividadeViewController: UIViewController {
     @IBOutlet weak var dataPrevista: UILabel!
     @IBOutlet weak var descricao: UILabel!
     
- 
-    
-    var detailText: String!
-        
+    var atividade: Atividade?
+            
     override func viewDidLoad() {
         
             super.viewDidLoad()
             
 //            self.nomeAtividade.text = detailText
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        if let atividade = self.atividade {
+            self.nomeAtividade.text = atividade.nome
+            self.descricao.text = atividade.descricao
+            self.tags.text = atividade.tags
+        }
     }
         
 }

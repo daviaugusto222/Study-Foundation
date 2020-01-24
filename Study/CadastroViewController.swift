@@ -39,7 +39,7 @@ class CadastroViewController: UIViewController {
           }
         
         
-        self.navigationController?.dismiss(animated: true)
+        
         self.dismiss(animated: true)
         
          

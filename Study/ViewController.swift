@@ -11,13 +11,11 @@ import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
-
    
     @IBOutlet weak var tableView: UITableView!
    let cellSpacingHeight: CGFloat = 5
     
-    var atividades: [String] = ["Estudar fisica","Estudar poo","Ensinar meu amigo","Revisar quimica"]
+    var atividades: [Atividade] = []
        
     
     override func viewDidLoad() {
@@ -34,16 +32,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destiny = segue.destination as? DetalheAtividadeViewController,
-            segue.identifier == "detalheDaAtividade",
-            let sendedNome = sender as? String{
-                destiny.detailText = "\(sendedNome) veio hoje"
-            
+        if segue.identifier == "detalheDaAtividade" {
+            if let destiny = segue.destination as? DetalheAtividadeViewController {
+                destiny.atividade = sender as? Atividade
             }
-        if let destinity = segue.destination as? JornadaTableViewController {
-            destinity.selected = 0
         }
-        
+
+//        if let destinity = segue.destination as? JornadaTableViewController {
+//            destinity.selected = 0
+//        }
+//
     }
     
     @IBAction func buttonAction(_ sender: UIButton) {
@@ -83,7 +81,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     cell.data.text = "27"
                     cell.descricao.text = atv[indexPath.row].descricao
                     cell.mes.text = "JAN"
-                    
+                    self.atividades = atv
                     
                  default:
                      print("error")
@@ -94,8 +92,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            let nome: String = atividades[indexPath.row]
-            self.performSegue(withIdentifier: "detalheDaAtividade", sender: nome)
+            let atividade: Atividade = self.atividades[indexPath.row]
+            self.performSegue(withIdentifier: "detalheDaAtividade", sender: atividade)
     
     }
     
@@ -103,6 +101,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return cellSpacingHeight
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+     if editingStyle == .delete {
+        print(self.atividades[indexPath.row])
+        self.atividades.remove(at: indexPath.row)
+        self.atividades[indexPath.row].delete()
+        tableView.deleteRows(at: [indexPath], with: .fade)
+     }
+    }
+    
+    
 
   
 }
