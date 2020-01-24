@@ -10,6 +10,54 @@ import UIKit
 
 class EditarPerfilViewController: UIViewController {
 
+    var nomeCompleto : NSString = ""
+    //var idade: Float = 0.0
+    var curso : NSString = ""
+    
+    @IBOutlet weak var AlterarNome: UITextField!
+    
+    @IBOutlet weak var AlterarCurso: UITextField!
+    
+    @IBOutlet weak var AlterarDataNascimento: UIDatePicker!
+    
+    
+    @IBOutlet weak var SalvarAlteracoes: UIButton!
+    
+    
+    @IBOutlet weak var LimparCampos: UIButton!
+    
+    
+    
+    @IBAction func LimparCampos(_ sender: Any) {
+        AlterarNome.text = nil
+        AlterarCurso.text = nil
+        //AletrarDadaNascimento.date = nil
+    }
+    
+    func exibirAlerta(){
+        let alerta = UIAlertController(title: "Alerta", message: "Preencha todos os campos", preferredStyle: UIAlertController.Style.alert);
+    
+        alerta.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil));
+    
+        self.present(alerta, animated: true, completion: nil);
+    }
+    
+    
+    @IBAction func SalvarAlteracoes(_ sender: Any) {
+        guard let _ = self.AlterarNome.text, self.AlterarNome.text?.isEmpty==false else {
+            exibirAlerta();
+            return
+        }
+
+        guard let _ = self.AlterarCurso.text, self.AlterarCurso.text?.isEmpty==false else {
+            exibirAlerta();
+            return
+        }
+
+
+    }
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
