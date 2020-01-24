@@ -17,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jornada do conhecimento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHs-CV-hmt">
-                                <rect key="frame" x="30" y="74" width="200" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="30" y="74" width="212.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -51,6 +51,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="bgView" destination="v79-x6-KHv" id="32J-F7-jBe"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -119,6 +122,9 @@
                                 <state key="normal" title="Concluir Jornada">
                                     <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonTappedWithSender:" destination="r3m-tm-LdT" eventType="touchUpInside" id="htC-uN-hlv"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW6-0L-kwa">
                                 <rect key="frame" x="30" y="289" width="315" height="20.5"/>
@@ -145,6 +151,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Jda-rb-Zdq"/>
                     <connections>
+                        <outlet property="concluirJornadaButton" destination="nBA-sX-8WZ" id="gHX-lI-YzV"/>
                         <outlet property="descricaoJornada" destination="hW6-0L-kwa" id="pqv-XR-r1O"/>
                         <outlet property="nomeJornada" destination="2yJ-Qz-OXa" id="3kw-j0-W5n"/>
                     </connections>
