@@ -215,7 +215,9 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqX-04-gDi">
                                 <rect key="frame" x="107" y="552" width="160" height="30"/>
-                                <state key="normal" title="Cadastrar atividade"/>
+                                <state key="normal" title="Cadastrar atividade">
+                                    <color key="titleColor" red="1" green="0.77306216955184937" blue="0.2458813488483429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="Cadastro:" destination="MSq-vL-xdf" eventType="touchUpInside" id="yGh-kI-oyY"/>
                                 </connections>
