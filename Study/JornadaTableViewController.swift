@@ -8,9 +8,22 @@
 
 import UIKit
 
-let jornadasArray = ["Beber água", "Alongar", "Fazer exercícios", "Aprender pomodoro", "Aplicar em alguma cadeira", "Tirar 10 na prova", "Zerar a vida"]
+struct JornadaStruct {
+    let nome: String
+    var concluida: Bool = false
+}
 
-let jornadasDescricaoArray = ["Manter-se hidratado é sempre essencial para a sua saúde.", "Antes de qualquer exercícios, sempre bom alongar-se para evitar dores nos músculos.", "Cuide bem do seu corpo com exercícios físicos. Comece pegando leve, aumentando a carga cada vez que se acostumar com o ritmo.", "Técnica.", ]
+var jornadasArray: [JornadaStruct] = [
+    JornadaStruct(nome: "Beber água"),
+    JornadaStruct(nome: "Alongar"),
+    JornadaStruct(nome: "Fazer exercícios"),
+    JornadaStruct(nome: "Aprender Pomodoro"),
+    JornadaStruct(nome: "Aplicar em alguma cadeira"),
+    JornadaStruct(nome: "Tirar 10 na prova"),
+    JornadaStruct(nome: "Zerar a vida")
+]
+
+let jornadasDescricaoArray = ["Manter-se hidratado é sempre essencial para a sua saúde. O ideal é beber, pelo menos, 2 litros de água por dia.", "O próximo passo é fazer cuidar mais do corpo fazendo exercícios físicos. Porém, antes de fazer qualquer atividade, sempre bom alongar-se para evitar dores nos músculos.", "Exercícios físicos fazem bem para a saúde, não só por pura estética. Comece pegando leve, aumentando a carga cada vez que se acostumar com o ritmo.", "Pomodoro é uma técnica muito utilizada para estudos, e é uma excelente alternativa para focar nos estudos e conseguir um bom rendimento.", "Após tudo isso, agora teste você mesmo: utilize a técnica pomodoro para estudar para uma cadeira específica.", "Hora de colher os frutos do seu trabalho! Talvez você não tenha tirado o 10, mas perceba o quanto você melhorou até aqui.", "Eu meio que tô sem ideias pra botar como descrição daqui, então considere que você já é foda o suficiente e conquiste o mundo do jeito que você quiser, seja dominando o mundo ou apenas sendo rico. Ou morar debaixo da ponte, se é esse o seu objetivo." ]
 
 var position = 0
 
@@ -33,6 +46,12 @@ class JornadaTableViewController: UIViewController, UITableViewDelegate, UITable
             self.selected = nil
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.Jornadas.reloadData()
+    }
 
     // MARK: - Table view data source
 
@@ -47,8 +66,13 @@ class JornadaTableViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Jornadas", for: indexPath) as! JornadaCell
         
-        cell.textLabel!.text = jornadasArray[indexPath.row]
+        let jornada = jornadasArray[indexPath.row]
+        cell.textLabel!.text = jornada.nome
         cell.layer.cornerRadius = 5
+        if jornada.concluida {
+            cell.bgView.backgroundColor = .systemBlue
+            cell.textLabel?.textColor = .white
+        }
 
         return cell
     }

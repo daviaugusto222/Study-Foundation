@@ -10,6 +10,8 @@ import UIKit
 
 class JornadaCell: UITableViewCell {
 
+    @IBOutlet weak var bgView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
